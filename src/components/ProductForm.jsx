@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API = 'http://localhost:5000/api/products';
+const API = 'https://inventory-backend-production-79c9.up.railway.app/api/products';
 const empty = { name: '', category: '', quantity: '', price: '', lowStockThreshold: 5 };
 
 export default function ProductForm({ onAdd, editProduct, onUpdate }) {
